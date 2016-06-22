@@ -1,0 +1,49 @@
+//===============================================================================
+// BASICS
+//===============================================================================
+// box-sizing everywhere and webkit text rendering correction
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+// remove padding & list styles from all <ul> as default
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+body, html {
+	width: 100%;
+	height: 100%
+}
+
+body {
+  background-color: white;
+}
+
+
+//===============================================================================
+// HOME STLYES
+//===============================================================================
+
+.body-section {
+	width: 100%;
+	max-width: 850px;
+	margin: 0 auto;
+	padding: .5em 1em;
+
+	@media screen and (max-width: 450px) {
+		padding: .5em 4em;
+	}
+}
+
+.section-green {
+	background-color: $d-green;
+
+	p {
+		color: white;
+	}
+}
