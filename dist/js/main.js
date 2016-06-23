@@ -6,6 +6,24 @@
 //===============================================================================
 
 
+//===============================================================================
+// Email
+//===============================================================================
+function sendMail() {
+		var link = 'mailto:me@example.com'
+		            + '?&subject=Booking request from ' + encodeURIComponent(window.document.getElementById('form-name').value)
+		            + '&body=I would love to book a table for ' + window.document.getElementById('form-diners').value 
+		            + ' people on ' + window.document.getElementById('form-date').value + ' July.%0D%0A'
+		    				+ 'For our first course we would like ' +  encodeURIComponent(window.document.getElementById('form-first-course').value) + '.%0D%0A'
+		    				+ 'For our second course we would like ' +  encodeURIComponent(window.document.getElementById('form-second-course').value) + '.%0D%0A'
+		    				+ 'Please contact me on ' + encodeURIComponent(window.document.getElementById('form-phone').value) + ' to confirm.' + '%0D%0A' + '%0D%0A'
+		    				+ 'Thanks!'
+		    				;
+
+    window.location.href = link;
+}
+
+window.document.getElementById('btn-form-submit').addEventListener("click", sendMail);
   
 //===============================================================================
 // Web form start
@@ -13,12 +31,6 @@
 
 /**
  * nlform.js v1.0.0
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2013, Codrops
  * http://www.codrops.com
  */
 

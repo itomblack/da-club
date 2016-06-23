@@ -273,7 +273,8 @@ h1, h2, h3 {
 h1 {
   font-size: 3.157em;
   color: #67b770;
-  margin: 0.5em 0 0 0; }
+  margin: 0.5em 0 0 0;
+  line-height: 1.1em; }
 
 /* line 24, /Users/itomblack/Repos/da-club/src/sass/_typography.scss */
 h2 {
@@ -291,7 +292,7 @@ p {
   font-size: 1em;
   line-height: 1.5em;
   margin: 0.5em auto 1em auto;
-  color: #417c6d;
+  color: #000030;
   max-width: 650px; }
 
 /* line 43, /Users/itomblack/Repos/da-club/src/sass/_typography.scss */
@@ -475,9 +476,12 @@ body {
   color: #FDD933;
   cursor: pointer;
   border-bottom: 1px dashed #FDD933; }
+  /* line 59, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+  .nl-field-toggle:hover, .nl-form input:hover, .nl-form select:hover {
+    color: white; }
 
 /* drop-down list / text element */
-/* line 61, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 65, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .nl-field ul {
   position: absolute;
   visibility: hidden;
@@ -492,7 +496,7 @@ body {
   -webkit-transition: visibility 0s 0.3s, opacity 0.3s, -webkit-transform 0.3s;
   transition: visibility 0s 0.3s, opacity 0.3s, transform 0.3s; }
 
-/* line 73, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 77, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .nl-field.nl-field-open ul {
   visibility: visible;
   opacity: 1;
@@ -503,41 +507,50 @@ body {
   transition: visibility 0s 0s, opacity 0.3s, transform 0.3s;
   padding: 0.5em; }
 
-/* line 81, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 85, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .nl-field ul li {
   color: #fff;
   position: relative; }
+  /* line 89, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+  .nl-field ul li:hover {
+    color: #FDD933; }
 
-/* line 86, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 92, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .nl-dd ul li {
   padding: 0.1em 1em;
   cursor: pointer;
   white-space: nowrap; }
+  /* line 97, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+  .nl-dd ul li:hover {
+    color: #FDD933; }
 
-/* line 92, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 100, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .nl-dd ul li.nl-dd-checked {
   color: #FDD933; }
+  /* line 103, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+  .nl-dd ul li.nl-dd-checked:hover {
+    color: white; }
 
-/* line 96, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 106, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .no-touch .nl-dd ul li:hover {
   background: rgba(0, 0, 0, 0.05); }
 
-/* line 100, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 110, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .no-touch .nl-dd ul li:hover:active {
   color: #478982; }
 
-/* line 105, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 115, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .nl-ti-text ul {
   min-width: 8em; }
 
-/* line 109, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 119, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .nl-ti-text ul li.nl-ti-input input {
   width: 100%;
   padding: 0.2em 2em 0.2em 0.5em;
   border-bottom: none;
   color: #fff; }
 
-/* line 116, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 126, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .nl-form .nl-field-go {
   position: absolute;
   right: 0;
@@ -550,7 +563,7 @@ body {
   font-size: 0;
   min-width: 36px; }
 
-/* line 129, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 139, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .nl-field-go:before {
   content: "\2713";
   font-size: 16px;
@@ -560,53 +573,59 @@ body {
   display: block; }
 
 /* custom placeholder color */
-/* line 139, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 149, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5); }
 
-/* line 144, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 154, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 input:active::-webkit-input-placeholder, input:focus::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.2); }
 
-/* line 148, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 158, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.5); }
 
-/* line 153, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 163, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 input:active::-moz-placeholder, input:focus::-moz-placeholder {
   color: rgba(255, 255, 255, 0.2); }
 
-/* line 157, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 167, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 input:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5); }
 
-/* line 162, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 172, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 input:active::-ms-input-placeholder, input:focus::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.2); }
 
 /* example field below text input */
-/* line 167, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 177, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .nl-ti-text ul li.nl-ti-example {
   display: none; }
 
 /* submit button */
-/* line 171, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 181, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .nl-submit-wrap {
   margin-top: 0.4em; }
 
-/* line 175, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
-.nl-form .nl-submit {
-  border: 1px solid white;
-  font-size: 16px;
-  padding: 0.5em 1em;
-  color: yellow;
-  margin-top: 1.333em; }
-
 /* line 185, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
-.no-touch .nl-form .nl-submit:hover, .no-touch .nl-form .nl-submit:active {
-  background: #69B1A9; }
+.nl-submit {
+  border: 1px solid white;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  color: #FDD933;
+  margin: 1.333em 0;
+  background: none;
+  font-size: 1.333em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
-/* line 190, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 198, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+.nl-submit:hover, .nl-submit:active {
+  -webkit-transform: scale(1.075);
+  -ms-transform: scale(1.075);
+  transform: scale(1.075); }
+
+/* line 204, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .nl-field.nl-field-open ~ .nl-overlay {
   opacity: 1;
   visibility: visible;
