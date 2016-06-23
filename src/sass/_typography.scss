@@ -35,8 +35,9 @@ p {
 	font-family: 'Open sans', helvetica, arial, sans-serif;
 	font-size: 1em;
 	line-height: 1.5em;
-	margin: .5em 0 1em 0;
+	margin: .5em auto 1em auto;
 	color: $d-green;
+	max-width: 650px;
 }
 
 .bot-marg-1 { margin-bottom: 1em; }

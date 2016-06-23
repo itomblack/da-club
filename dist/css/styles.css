@@ -290,10 +290,11 @@ p {
   font-family: 'Open sans', helvetica, arial, sans-serif;
   font-size: 1em;
   line-height: 1.5em;
-  margin: 0.5em 0 1em 0;
-  color: #417c6d; }
+  margin: 0.5em auto 1em auto;
+  color: #417c6d;
+  max-width: 650px; }
 
-/* line 42, /Users/itomblack/Repos/da-club/src/sass/_typography.scss */
+/* line 43, /Users/itomblack/Repos/da-club/src/sass/_typography.scss */
 .bot-marg-1 {
   margin-bottom: 1em; }
 
@@ -321,19 +322,109 @@ body {
 /* line 32, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
 .body-section {
   width: 100%;
-  max-width: 850px;
   margin: 0 auto;
-  padding: 0.5em 1em; }
+  padding: 0.5em 1em;
+  position: relative; }
   @media screen and (max-width: 450px) {
     .body-section {
       padding: 0.5em 4em; } }
+  @media screen and (max-width: 900px) {
+    .body-section {
+      padding: 0.2em 4em; } }
 
-/* line 43, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+/* line 47, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
 .section-green {
   background-color: #417c6d; }
-  /* line 46, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+  /* line 50, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
   .section-green p {
     color: white; }
+
+/* line 55, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+.img-100 {
+  width: 100px; }
+  @media screen and (min-width: 1100px) {
+    .img-100 {
+      width: 150px; } }
+
+/* line 61, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+.food-img {
+  width: 100px;
+  position: absolute; }
+
+/* line 66, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+.food-1 {
+  left: -34px;
+  top: -25px; }
+
+/* line 71, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+.food-2 {
+  right: -40px;
+  top: 153px; }
+
+/* line 76, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+.food-3 {
+  right: -40px;
+  bottom: 153px; }
+
+/* line 81, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+.food-4 {
+  right: -40px;
+  bottom: 153px; }
+
+@media screen and (min-width: 900px) {
+  /* line 87, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+  .food-img {
+    width: 125px;
+    position: absolute; }
+  /* line 91, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+  .food-1 {
+    left: 5px;
+    top: -125px; }
+  /* line 95, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+  .food-2 {
+    right: 5px;
+    top: 53px; } }
+
+@media screen and (min-width: 1100px) {
+  /* line 102, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+  .food-img {
+    width: 200px;
+    position: absolute; }
+  /* line 106, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+  .food-1 {
+    left: 5px;
+    top: -175px; }
+  /* line 110, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+  .food-2 {
+    right: 5px;
+    top: 53px; } }
+
+/* line 120, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+.parallax {
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+/* line 127, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+/* line 134, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+
+/* line 137, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+.parallax__layer--back {
+  position: relative;
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2); }
 
 /* general style for the form */
 /* line 7, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
@@ -435,106 +526,87 @@ body {
 .no-touch .nl-dd ul li:hover:active {
   color: #478982; }
 
-/* line 114, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 105, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .nl-ti-text ul {
   min-width: 8em; }
 
-/* line 118, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 109, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .nl-ti-text ul li.nl-ti-input input {
   width: 100%;
   padding: 0.2em 2em 0.2em 0.5em;
   border-bottom: none;
   color: #fff; }
 
-/* line 125, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 116, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .nl-form .nl-field-go {
   position: absolute;
   right: 0;
   top: 0;
   height: 100%;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.1);
-  width: 1.8em;
+  border: 1px solid white;
   text-align: center;
-  color: transparent; }
+  color: transparent;
+  font-size: 0;
+  min-width: 36px; }
 
-/* line 137, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 129, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .nl-field-go:before {
   content: "\2713";
-  font-size: 75%;
+  font-size: 16px;
   color: #fff;
   width: 100%;
   line-height: 2.5;
   display: block; }
 
 /* custom placeholder color */
-/* line 147, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 139, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.8); }
+  color: rgba(255, 255, 255, 0.5); }
 
-/* line 152, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 144, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 input:active::-webkit-input-placeholder, input:focus::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.2); }
 
-/* line 156, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 148, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.8); }
+  color: rgba(255, 255, 255, 0.5); }
 
-/* line 161, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 153, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 input:active::-moz-placeholder, input:focus::-moz-placeholder {
   color: rgba(255, 255, 255, 0.2); }
 
-/* line 165, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 157, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.8); }
+  color: rgba(255, 255, 255, 0.5); }
 
-/* line 170, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 162, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 input:active::-ms-input-placeholder, input:focus::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.2); }
 
 /* example field below text input */
-/* line 175, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 167, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .nl-ti-text ul li.nl-ti-example {
   display: none; }
 
 /* submit button */
-/* line 179, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 171, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .nl-submit-wrap {
   margin-top: 0.4em; }
 
-/* line 183, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 175, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .nl-form .nl-submit {
-  line-height: 3;
-  text-transform: uppercase;
-  cursor: pointer;
-  position: relative;
-  background: #76C3BD;
-  color: #fff;
-  padding: 0 1em 0 0;
-  font-size: 40%;
-  font-weight: bold;
-  letter-spacing: 3px; }
+  border: 1px solid white;
+  font-size: 16px;
+  padding: 0.5em 1em;
+  color: yellow;
+  margin-top: 1.333em; }
 
-/* line 206, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 185, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .no-touch .nl-form .nl-submit:hover, .no-touch .nl-form .nl-submit:active {
   background: #69B1A9; }
 
-/* overlay becomes visible when a field is opened */
-/* line 215, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
-.nl-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  z-index: 9999;
-  visibility: hidden;
-  -webkit-transition: visibility 0s 0.3s, opacity 0.3s;
-  transition: visibility 0s 0.3s, opacity 0.3s; }
-
-/* line 228, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
+/* line 190, /Users/itomblack/Repos/da-club/src/sass/_input-form.scss */
 .nl-field.nl-field-open ~ .nl-overlay {
   opacity: 1;
   visibility: visible;

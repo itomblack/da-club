@@ -48,8 +48,8 @@
 				self.fldOpen++;
 				self.fields.push( new NLField( self, el, 'input', self.fldOpen ) );
 			} );
-			this.overlay.addEventListener( 'click', function(ev) { self._closeFlds(); } );
-			this.overlay.addEventListener( 'touchstart', function(ev) { self._closeFlds(); } );
+			// document.getElementById('main-content').addEventListener( 'click', function(ev) { self._closeFlds(); } );
+			// window.overlay.addEventListener( 'touchstart', function(ev) { self._closeFlds(); } );
 		},
 		_closeFlds : function() {
 			if( this.fldOpen !== -1 ) {
