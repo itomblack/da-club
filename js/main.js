@@ -24,6 +24,12 @@ function sendMail() {
 }
 
 window.document.getElementById('btn-form-submit').addEventListener("click", sendMail);
+
+
+// window.document.getElementById('form-diners').val('foo').change();
+// window.document.getElementById('nlform').onclick = function() {
+// 	console.log(window.document.getElementById('form-diners').value);
+// };
   
 //===============================================================================
 // Web form start
@@ -218,8 +224,12 @@ window.document.getElementById('btn-form-submit').addEventListener("click", send
 	window.NLForm = NLForm;
 
 
+	var nlform = new NLForm( document.getElementById( 'nl-form' ) );
 
-
+	window.document.getElementById('nl-form').onclick = function() {
+			var dinerNumber = window.document.getElementById('form-diners').value;
+			window.document.getElementById('form-price').innerHTML = '£' + (dinerNumber * 24);
+	};
 
 
 

@@ -34,6 +34,8 @@ body {
 	margin: 0 auto;
 	padding: .5em 1em;
 	position: relative;
+	opacity: 0;
+	animation: opacityIn $long $mid ease forwards;
 
 	@media screen and (max-width: 450px) {
 		padding: .5em 4em;
@@ -61,6 +63,8 @@ body {
 .food-img {
 	width: 100px;
 	position: absolute;
+	opacity: 0;
+	animation: opacityInDown $vLong ease forwards;
 }
 
 .food-1 {
@@ -145,4 +149,17 @@ body {
 
 
 
+//===============================================================================
+// Animation
+//===============================================================================
+
+@keyframes opacityIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes opacityInDown {
+  0%   { opacity: 0; transform: translate(0,-75px); }
+  100% { opacity: 1; transform: translate(0,0); }
+}
 
