@@ -10,7 +10,7 @@
 // Email
 //===============================================================================
 function sendMail() {
-		var link = 'mailto:me@example.com'
+		var link = 'mailto:lastsupperclublondon@gmail.com'
 		            + '?&subject=Booking request from ' + encodeURIComponent(window.document.getElementById('form-name').value)
 		            + '&body=I would love to book a table for ' + window.document.getElementById('form-diners').value 
 		            + ' people on ' + window.document.getElementById('form-date').value + ' July.%0D%0A'
@@ -111,6 +111,10 @@ window.document.getElementById('btn-form-submit').addEventListener("click", send
 			this.elOriginal.style.display = 'none';
 		},
 		_createInput : function() {
+
+			var newId = this.elOriginal.id + '-2'
+
+
 			var self = this;
 			this.fld = document.createElement( 'div' );
 			this.fld.className = 'nl-field nl-ti-text';
@@ -120,6 +124,9 @@ window.document.getElementById('btn-form-submit').addEventListener("click", send
 			this.optionsList = document.createElement( 'ul' );
 			this.getinput = document.createElement( 'input' );
 			this.getinput.setAttribute( 'type', 'text' );
+
+			this.getinput.setAttribute('id', newId);
+
 			this.getinput.setAttribute( 'placeholder', this.elOriginal.getAttribute( 'placeholder' ) );
 			this.getinputWrapper = document.createElement( 'li' );
 			this.getinputWrapper.className = 'nl-ti-input';
@@ -140,13 +147,13 @@ window.document.getElementById('btn-form-submit').addEventListener("click", send
 		},
 		_initEvents : function() {
 			var self = this;
-			this.toggle.addEventListener( 'click', function( ev ) { ev.preventDefault(); ev.stopPropagation(); self._open(); } );
+			this.toggle.addEventListener( 'mouseup', function( ev ) { ev.preventDefault(); ev.stopPropagation(); self._open(); } );
 			this.toggle.addEventListener( 'touchstart', function( ev ) { ev.preventDefault(); ev.stopPropagation(); self._open(); } );
 
 			if( this.type === 'dropdown' ) {
 				var opts = Array.prototype.slice.call( this.optionsList.querySelectorAll( 'li' ) );
 				opts.forEach( function( el, i ) {
-					el.addEventListener( 'click', function( ev ) { ev.preventDefault(); self.close( el, opts.indexOf( el ) ); } );
+					el.addEventListener( 'mouseup', function( ev ) { ev.preventDefault(); self.close( el, opts.indexOf( el ) ); } );
 					el.addEventListener( 'touchstart', function( ev ) { ev.preventDefault(); self.close( el, opts.indexOf( el ) ); } );
 				} );
 			}
@@ -169,6 +176,14 @@ window.document.getElementById('btn-form-submit').addEventListener("click", send
 			this.form.fldOpen = this.pos;
 			var self = this;
 			this.fld.className += ' nl-field-open';
+			
+			var selectId = this.elOriginal.id + '-2'
+			if (this.elOriginal.type === 'text' ) {
+				window.document.getElementById(selectId).focus();
+				window.document.getElementById(selectId).select();
+			}
+			
+
 		},
 		close : function( opt, idx ) {
 			if( !this.open ) {

@@ -269,7 +269,7 @@ body {
 .section-green {
   background-color: #417c6d; }
   /* line 50, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
-  .section-green p {
+  .section-green p, .section-green h1, .section-green h2, .section-green h3 {
     color: white; }
 
 /* line 55, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
