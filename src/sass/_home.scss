@@ -73,16 +73,6 @@ body {
 	top: 153px;
 }
 
-.food-3 {
-	right: -40px;
-	bottom: 153px;
-}
-
-.food-4 {
-	right: -40px;
-	bottom: 153px;
-}
-
 @media screen and (min-width: 900px) {
 	.food-img {
 		width: 125px;
@@ -110,6 +100,20 @@ body {
 	.food-2 {
 		right: 5px;
 		top: 53px;
+	}
+}
+
+.btn-share {
+	width: 48px;
+	height: 48px;
+	border: 1px solid $l-green;
+	padding: 8px;
+	margin: 0 8px 32px 8px;
+	display: inline-block;
+
+	img, svg {
+		width: 100%;
+		height: 100%;
 	}
 }
 

@@ -189,74 +189,6 @@ table {
 td, th {
   padding: 0; }
 
-/* line 10, /Users/itomblack/Repos/da-club/src/sass/_grid.scss */
-.grid {
-  margin: 0 auto;
-  max-width: 1200px; }
-  /* line 8, /Users/itomblack/Repos/da-club/src/sass/_mixins.scss */
-  .grid:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-/* line 16, /Users/itomblack/Repos/da-club/src/sass/_grid.scss */
-.padded {
-  padding: 20px; }
-
-/* line 20, /Users/itomblack/Repos/da-club/src/sass/_grid.scss */
-[class*='col-'] {
-  float: left;
-  padding-right: 20px;
-  padding-left: 20px; }
-
-/* line 26, /Users/itomblack/Repos/da-club/src/sass/_grid.scss */
-.col-1-1 {
-  width: 100%; }
-
-/* line 27, /Users/itomblack/Repos/da-club/src/sass/_grid.scss */
-.col-2-3 {
-  width: 66.66%; }
-
-/* line 28, /Users/itomblack/Repos/da-club/src/sass/_grid.scss */
-.col-1-3 {
-  width: 33.33%; }
-
-/* line 29, /Users/itomblack/Repos/da-club/src/sass/_grid.scss */
-.col-1-2 {
-  width: 50%; }
-
-/* line 30, /Users/itomblack/Repos/da-club/src/sass/_grid.scss */
-.col-1-4 {
-  width: 25%; }
-
-/* line 31, /Users/itomblack/Repos/da-club/src/sass/_grid.scss */
-.col-1-8 {
-  width: 12.5%; }
-
-@media screen and (max-width: 500px) {
-  /* line 34, /Users/itomblack/Repos/da-club/src/sass/_grid.scss */
-  [class*='col-'] {
-    width: 100%;
-    float: none; }
-  /* line 39, /Users/itomblack/Repos/da-club/src/sass/_grid.scss */
-  .mobile-col-2-3, .mobile-col-1-3, .mobile-col-1-2, .mobile-col-1-4, .mobile-col-1-8 {
-    float: left; }
-  /* line 42, /Users/itomblack/Repos/da-club/src/sass/_grid.scss */
-  .mobile-col-2-3 {
-    width: 66.66%; }
-  /* line 43, /Users/itomblack/Repos/da-club/src/sass/_grid.scss */
-  .mobile-col-1-3 {
-    width: 33.33%; }
-  /* line 44, /Users/itomblack/Repos/da-club/src/sass/_grid.scss */
-  .mobile-col-1-2 {
-    width: 50%; }
-  /* line 45, /Users/itomblack/Repos/da-club/src/sass/_grid.scss */
-  .mobile-col-1-4 {
-    width: 25%; }
-  /* line 46, /Users/itomblack/Repos/da-club/src/sass/_grid.scss */
-  .mobile-col-1-8 {
-    width: 12.5%; } }
-
 /* line 5, /Users/itomblack/Repos/da-club/src/sass/_typography.scss */
 body, html {
   font-family: 'Cormorant Garamond', serif;
@@ -362,45 +294,48 @@ body {
   right: -40px;
   top: 153px; }
 
-/* line 76, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
-.food-3 {
-  right: -40px;
-  bottom: 153px; }
-
-/* line 81, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
-.food-4 {
-  right: -40px;
-  bottom: 153px; }
-
 @media screen and (min-width: 900px) {
-  /* line 87, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+  /* line 77, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
   .food-img {
     width: 125px;
     position: absolute; }
-  /* line 91, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+  /* line 81, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
   .food-1 {
     left: 5px;
     top: -125px; }
-  /* line 95, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+  /* line 85, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
   .food-2 {
     right: 5px;
     top: 53px; } }
 
 @media screen and (min-width: 1100px) {
-  /* line 102, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+  /* line 92, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
   .food-img {
     width: 200px;
     position: absolute; }
-  /* line 106, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+  /* line 96, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
   .food-1 {
     left: 5px;
     top: -175px; }
-  /* line 110, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+  /* line 100, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
   .food-2 {
     right: 5px;
     top: 53px; } }
 
-/* line 120, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+/* line 106, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+.btn-share {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #67b770;
+  padding: 8px;
+  margin: 0 8px 32px 8px;
+  display: inline-block; }
+  /* line 114, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+  .btn-share img, .btn-share svg {
+    width: 100%;
+    height: 100%; }
+
+/* line 124, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
 .parallax {
   -webkit-perspective: 1px;
   perspective: 1px;
@@ -408,7 +343,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto; }
 
-/* line 127, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+/* line 131, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
 .parallax__layer {
   position: absolute;
   top: 0;
@@ -416,12 +351,12 @@ body {
   bottom: 0;
   left: 0; }
 
-/* line 134, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+/* line 138, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
 .parallax__layer--base {
   -webkit-transform: translateZ(0);
   transform: translateZ(0); }
 
-/* line 137, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
+/* line 141, /Users/itomblack/Repos/da-club/src/sass/_home.scss */
 .parallax__layer--back {
   position: relative;
   -webkit-transform: translateZ(-1px) scale(2);
