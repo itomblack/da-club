@@ -228,6 +228,19 @@ p {
   max-width: 650px; }
 
 /* line 43, /Users/itomblack/Repos/da-club/src/sass/_typography.scss */
+a {
+  text-decoration: none;
+  color: #41926d;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  /* line 48, /Users/itomblack/Repos/da-club/src/sass/_typography.scss */
+  a:hover {
+    color: #417c6d;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+
+/* line 54, /Users/itomblack/Repos/da-club/src/sass/_typography.scss */
 .bot-marg-1 {
   margin-bottom: 1em; }
 

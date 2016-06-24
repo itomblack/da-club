@@ -40,4 +40,15 @@ p {
 	max-width: 650px;
 }
 
+a {
+	text-decoration: none;
+	color: $m-green;
+	transition: all $short ease;
+
+	&:hover {
+		color: $d-green;
+		transform: scale(1.1);
+	}
+}
+
 .bot-marg-1 { margin-bottom: 1em; }
