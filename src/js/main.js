@@ -228,7 +228,7 @@ window.document.getElementById('btn-form-submit').addEventListener("click", send
 
 	window.document.getElementById('nl-form').onclick = function() {
 			var dinerNumber = window.document.getElementById('form-diners').value;
-			window.document.getElementById('form-price').innerHTML = '£' + (dinerNumber * 24);
+			window.document.getElementById('form-price').innerHTML = (dinerNumber * 24);
 	};
 
 
