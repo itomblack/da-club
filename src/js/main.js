@@ -4,7 +4,9 @@
 //===============================================================================
 // Other
 //===============================================================================
-
+window.document.getElementById('hide-overlay').addEventListener("click", function() {
+	window.document.getElementById('overlay-closed').style.display = "none";
+});
 
 //===============================================================================
 // Email

@@ -358,7 +358,24 @@ body {
     width: 100%;
     height: 100%; }
 
-/* line 128, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
+/* line 124, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
+.overlay-closed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.95;
+  z-index: 100;
+  padding-top: 4em; }
+
+/* line 134, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
+.hide-overlay {
+  position: fixed;
+  width: 100%;
+  height: 32px;
+  bottom: 0; }
+
+/* line 145, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
 .parallax {
   -webkit-perspective: 1px;
   perspective: 1px;
@@ -366,7 +383,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto; }
 
-/* line 135, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
+/* line 152, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
 .parallax__layer {
   position: absolute;
   top: 0;
@@ -374,56 +391,56 @@ body {
   bottom: 0;
   left: 0; }
 
-/* line 142, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
+/* line 159, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
 .parallax__layer--base {
   -webkit-transform: translateZ(0);
   transform: translateZ(0); }
 
-/* line 145, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
+/* line 162, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
 .parallax__layer--back {
   position: relative;
   -webkit-transform: translateZ(-1px) scale(2);
   transform: translateZ(-1px) scale(2); }
 
 @-webkit-keyframes opacityIn {
-  /* line 157, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
+  /* line 174, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
   0% {
     opacity: 0; }
 
-  /* line 158, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
+  /* line 175, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
   100% {
     opacity: 1; } }
 
 @keyframes opacityIn {
-  /* line 157, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
+  /* line 174, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
   0% {
     opacity: 0; }
 
-  /* line 158, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
+  /* line 175, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
   100% {
     opacity: 1; } }
 
 @-webkit-keyframes opacityInDown {
-  /* line 162, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
+  /* line 179, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
   0% {
     opacity: 0;
     -webkit-transform: translate(0, -75px);
     transform: translate(0, -75px); }
 
-  /* line 163, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
+  /* line 180, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
   100% {
     opacity: 1;
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0); } }
 
 @keyframes opacityInDown {
-  /* line 162, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
+  /* line 179, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
   0% {
     opacity: 0;
     -webkit-transform: translate(0, -75px);
     transform: translate(0, -75px); }
 
-  /* line 163, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
+  /* line 180, /Users/itomblack/Repos/supper-club/src/sass/_home.scss */
   100% {
     opacity: 1;
     -webkit-transform: translate(0, 0);
